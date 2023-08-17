@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header> <h1>Kalkulator Keliling & Luas Segitiga</h1></header>
+
+    <main>
+      <section>
+        <div class="container">
+          <!--?? Kalkulator hitung keliling -->
+          <div class="calc-container calc-keliling">
+            <h2>Hitung Keliling</h2>
+
+              <div class="rumus">
+                <img src="./assets/keliling.png" alt="Rumus keliling segitiga" width="70px" height="70px">
+              </div>
+
+              <div class="display-screen">
+                <input class="display input-keliling" id="sisi1" type="number" placeholder="Sisi pertama segitiga"></input>
+              </div>
+      
+              <div class="display-screen">
+                <input class="display input-keliling" id="sisi2" type="number" placeholder="Sisi kedua segitiga"></input>
+              </div>
+
+              <div class="display-screen">
+                <input class="display input-keliling" id="sisi3" type="number" placeholder="Sisi ketiga segitiga"></input>
+              </div>
+
+              <div class="hasil-akhir" id="hasil-akhir-keliling">
+                <p>K = s1 &plus; s2 &plus; s3</p>
+                <p>
+                K = <span id="sisi1Value"></span> &plus;
+                <span id="sisi2Value"></span> &plus; <span id="sisi3Value"></span>
+                </p>
+                <p style="font-weight: bold">
+                  K = <span id="kelilingHasil"></span>
+                </p>
+              </div>
+                
+
+              <button class="btn-hitung" onclick="hitungKeliling()">Hitung</button>
+              <button class="btn-reset" onclick="resetKeliling()">Reset</button>
+          </div>
+
+
+          <!-- ?? Kalkulator hitung luas -->
+          <div class="calc-container calc-luas">
+            <h2>Hitung Luas</h2>
+
+            <div class="rumus">
+              <img src="./assets/luas.png" alt="Rumus keliling segitiga" width="70px" height="70px">
+            </div>
+
+            <div class="display-screen">
+              <input class="display input-luas" id="alas" placeholder="Alas segitiga"></input>
+            </div>
+
+            <div class="display-screen">
+              <input class="display input-luas" id="tinggi" placeholder="Tinggi segitiga"></input>
+            </div>
+
+            <div class="hasil-akhir" id="hasil-akhir-luas">
+              <p>L = 1/2 &times; a &times; t</p>
+              <p class="mb-1">
+                L = 1/2 &times; <span id="alasValue"></span> &times;
+                <span id="tinggiValue"></span>
+              </p>
+              <p style="font-weight: bold">L = <span id="luasHasil"></span></p>
+            </div>
+
+            <button class="btn-hitung" onclick="hitungLuas()">Hitung</button>
+              <button class="btn-reset" onclick="resetLuas()">Reset</button>
+          </div>
+
+          
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with ❤ By Ilham &copy 2023 </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

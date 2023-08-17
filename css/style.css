@@ -1,0 +1,144 @@
+::placeholder {
+  font-size: 16px;
+  opacity: 1; /* Firefox */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  transition: all 0.5s ease;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  width: 80%;
+  margin: 0px auto 0px auto;
+  border-radius: 0px 0px 40px 40px;
+  background-color: #4c7486;
+  text-align: center;
+  color: white;
+  height: 70px;
+  padding: 10px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.calc-container {
+  border: 2px solid #4c7486;
+  background-color: #f5f5f5;
+  position: relative;
+  height: fit-content;
+  width: 35%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #000;
+}
+
+.calc-container h2 {
+  color: #4c7486;
+  font-size: 18px;
+}
+
+.calc-keliling {
+  float: left;
+  margin: 20px 0px 0px 150px;
+}
+
+.calc-luas {
+  float: right;
+  margin: 20px 150px 0px 0px;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #000;
+}
+
+.display {
+  border: none;
+  border-bottom: 2px solid #4c7486;
+  background-color: transparent;
+  margin: 0 10px;
+  height: 50px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 22px;
+  margin-bottom: 20px;
+  overflow-x: scroll;
+  color: #4c7486;
+}
+
+button {
+  height: 35px;
+  width: 80px;
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.btn-hitung {
+  background-color: #4c7486;
+  color: white;
+}
+
+.btn-reset {
+  border: 2px solid #4c7486;
+  background-color: white;
+  color: #4c7486;
+  font-weight: 500;
+}
+
+.rumus {
+  width: 350px;
+  height: 200px;
+}
+
+.rumus img {
+  width: 100%;
+  height: 100%;
+}
+
+.hasil-akhir {
+  display: none;
+  margin: 0px 0px 5px 12px;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #4c7486;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 22px;
+}
